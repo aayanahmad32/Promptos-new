@@ -1,7 +1,7 @@
 {
   "name": "PromptOS: AI Prompt Generator",
   "short_name": "PromptOS",
-  "description": "Transform your ideas into expert-level AI prompts for art, code, business, and more",
+  "description": "Transform your ideas into expert-level AI prompts",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0c14",
@@ -9,66 +9,12 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["productivity", "utilities", "education"],
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s512/IMG_20250928_223807.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "Generate Prompt",
-      "short_name": "Generate",
-      "description": "Create a new AI prompt",
-      "url": "/?action=generate",
-      "icons": [
-        {
-          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s96/IMG_20250928_223807.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "View History",
-      "short_name": "History",
-      "description": "View your prompt history",
-      "url": "/?action=history",
-      "icons": [
-        {
-          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s96/IMG_20250928_223807.png",
-          "sizes": "96x96"
-        }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png",
-      "sizes": "1536x768",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "PromptOS main interface"
-    },
-    {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "PromptOS mobile view"
-    }
-  ],
-  "related_applications": [],
-  "prefer_related_applications": false,
-  "edge_side_panel": {
-    "preferred_width": 400
-  }
+  ]
 }
