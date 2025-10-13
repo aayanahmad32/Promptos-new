@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"/>
+    
+    <!-- SEO META TAGS -->
+    <meta content='index, follow' name='robots'/>
+    <meta content='PromptOS Team' name='author'/>
+    <meta content='AI prompt generator, prompt engineering, AI tools, ChatGPT prompts, Midjourney prompts, AI assistant, prompt creator, prompt optimizer, AI writing assistant, prompt templates, prompt builder, AI prompt library, prompt generator free, best AI prompts, prompt engineering tool' name='keywords'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#9b59b6"/>
+    <meta name="msapplication-TileColor" content="#9b59b6"/>
+    
+    <!-- LICENSE INFO -->
+    <meta name="license" content="PromptOS Restricted License - Personal use only, modification and commercial use require permission">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- iOS Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PromptOS">
+    <meta name="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png">
+    
+    <!-- FIXED TITLE -->
+    <title>PromptOS: Free AI Prompt Generator for Art, Code & Business</title>
+
+    <!-- FIXED DESCRIPTION -->
+    <meta content='Unlock the power of AI with PromptOS. Our intelligent engine automatically deconstructs your ideas into expert-level prompts for any task, ensuring professional results every time.' name='description'/>
+
+    <!-- FIXED CANONICAL URL -->
+    <link href='https://promptos-gq5n.vercel.app/' rel='canonical'/>
+
+    <!-- OPEN GRAPH & TWITTER TAGS -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="PromptOS"/>
+    <meta property="og:title" content="PromptOS: Free AI Prompt Generator for Art, Code & Business"/>
+    <meta property="og:description" content="Unlock the power of AI with PromptOS. Our intelligent engine automatically deconstructs your ideas into expert-level prompts for any task."/>
+    <meta property="og:url" content="https://promptos-gq5n.vercel.app/"/>
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png"/>
+    <meta property="og:image:width" content="1536"/>
+    <meta property="og:image:height" content="768"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:locale" content="en_US"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="PromptOS: Free AI Prompt Generator for Art, Code & Business"/>
+    <meta name="twitter:description" content="Unlock the power of AI with PromptOS. Our intelligent engine automatically deconstructs your ideas into expert-level prompts for any task."/>
+    <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png"/>
+    <meta name="twitter:image:alt" content="PromptOS AI Prompt Generator Interface"/>
+    <meta name="twitter:site" content="@looplabstech"/>
+    <meta name="twitter:creator" content="@looplabstech"/>
+    
+    <!-- Additional SEO Tags -->
+    <meta name="application-name" content="PromptOS"/>
+    <meta name="subject" content="AI Prompt Generator"/>
+    <meta name="language" content="English"/>
+    <meta name="coverage" content="Worldwide"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="rating" content="General"/>
+    <meta name="revisit-after" content="7 days"/>
+    <meta name="referrer" content="origin-when-cross-origin"/>
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous"/>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/"/>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/"/>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/"/>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PromptOS",
+      "alternateName": "PromptOS: Free AI Prompt Generator",
+      "url": "https://promptos-gq5n.vercel.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://promptos-gq5n.vercel.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png",
+      "sameAs": [
+        "https://www.instagram.com/looplabstech"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "LoopLabs",
+        "url": "https://www.instagram.com/looplabstech"
+      },
+      "dateModified": "2024-05-24",
+      "datePublished": "2024-05-24",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "keywords": "AI prompt generator, prompt engineering, AI tools, ChatGPT prompts, Midjourney prompts, AI assistant"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PromptOS",
+      "operatingSystem": "Web",
+      "applicationCategory": "DeveloperApplication",
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "218" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "An intelligent AI co-pilot that automatically deconstructs simple ideas into expert-level prompts for art, code, and writing.",
+      "url": "https://promptos-gq5n.vercel.app/",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png",
+      "featureList": [
+        "Intelligent prompt generation",
+        "Format conversion (JSON, SQL, YAML, XML)",
+        "Art & code templates",
+        "Mobile-friendly interface",
+        "History tracking",
+        "Token counter"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "LoopLabs",
+        "url": "https://www.instagram.com/looplabstech"
+      },
+      "applicationSubCategory": "AI Tools",
+      "downloadUrl": "https://promptos-gq5n.vercel.app/",
+      "installUrl": "https://promptos-gq5n.vercel.app/",
+      "screenshot": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZojis4zVLm4k6QORPoCnfCjCAGLrN_dpdWOdmGZeS9u40sQ7mm83_Oa6eNPBzSW7MbBQ5Hr6KEc0vd8QOVSl70MLLGcfOqTjlLyffSSFherJ2YDC5y4T3u43sgmnKpdsM-IeC1wrgck_XOQiXlOrd37-i8jVLqwh6BM4niWZoUZ94ljlRHXMLsqDyyxwc/s1536/IMG_20250929_213427.png",
+      "softwareVersion": "1.0.0",
+      "dateModified": "2024-05-24",
+      "datePublished": "2024-05-24"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LoopLabs",
+      "url": "https://www.instagram.com/looplabstech",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png",
+      "sameAs": [
+        "https://www.instagram.com/looplabstech"
+      ]
+    }
+    </script>
+    
+    <!-- Critical CSS Inline for Performance -->
+    <style>
+        :root{--font-main:'Exo 2',sans-serif;--font-mono:'Fira Code',monospace;--bg-color:#0a0c14;--panel-bg:rgba(21,24,38,.7);--panel-border:rgba(155,89,182,.25);--glow-color:rgba(155,89,182,.3);--primary-accent:#9b59b6;--secondary-accent:#8e44ad;--text-color:#dfe6f2;--text-muted:#8a99b3;--success-color:#2ecc71;--warning-color:#f39c12;--error-color:#e74c3c}*,::after,::before{margin:0;padding:0;box-sizing:border-box}@keyframes aurora{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(155,89,182,0.7)}70%{box-shadow:0 0 0 10px rgba(155,89,182,0)}100%{box-shadow:0 0 0 0 rgba(155,89,182,0)}}@keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}@keyframes glow{0%,100%{text-shadow:0 0 5px rgba(155,89,182,0.5)}50%{text-shadow:0 0 20px rgba(155,89,182,0.8),0 0 30px rgba(155,89,182,0.6)}}body{background:linear-gradient(-45deg,#0a0c14,#151826,#2d0b3f,#151826);background-size:400% 400%;animation:aurora 15s ease infinite;color:var(--text-color);font-family:var(--font-main);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;min-height:100vh}body::-webkit-scrollbar{width:8px}body::-webkit-scrollbar-track{background:var(--bg-color)}body::-webkit-scrollbar-thumb{background:var(--primary-accent);border-radius:4px}body::-webkit-scrollbar-thumb:hover{background:var(--secondary-accent)}.os-container{display:flex;flex-direction:column;min-height:100vh}.os-header,.os-footer{flex-shrink:0;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(10,12,20,.6);border-color:var(--panel-border);z-index:10}.os-header{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;border-bottom:1px solid var(--panel-border);animation:fadeIn 0.8s ease}.os-main{flex-grow:1;padding:1rem;overflow-y:auto;position:relative;animation:fadeIn 1s ease}.main-panel{display:flex;flex-direction:column;gap:1rem;max-width:800px;margin:0 auto;animation:fadeIn 1.2s ease}.input-card,.output-card{background:var(--panel-bg);border:1px solid var(--panel-border);border-radius:16px;box-shadow:0 0 40px var(--glow-color);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:1rem;transition:transform 0.3s ease, box-shadow 0.3s ease}.input-card:hover,.output-card:hover{transform:translateY(-5px);box-shadow:0 5px 50px var(--glow-color)}.textarea-wrapper{position:relative;display:flex}#prompt-canvas{flex-grow:1;background:0 0;border:none;outline:0;resize:none;color:var(--text-color);font-size:1.1rem;font-family:var(--font-mono);min-height:150px;padding:0.5rem;border-radius:8px;transition:border-color 0.3s ease}#prompt-canvas:focus{border:1px solid var(--primary-accent)}#output-preview{white-space:pre-wrap;word-wrap:break-word;margin-top:1rem;line-height:1.6;animation:fadeIn 0.5s ease}.ad-placeholder{width:100%;display:flex;justify-content:center;align-items:center;min-height:50px;margin:1rem auto 0;clear:both;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;color:var(--text-muted);font-size:0.9rem;text-align:center;padding:10px;animation:fadeIn 0.7s ease}.ad-banner{display:block;width:100%;max-width:728px;height:90px;margin:0 auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-mobile{display:block;width:100%;max-width:320px;height:50px;margin:0 auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-middle{display:block;width:100%;max-width:300px;height:250px;margin:1rem auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-sidebar{display:block;width:100%;max-width:160px;height:600px;margin:0 auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-small{display:block;width:100%;max-width:300px;height:250px;margin:1rem auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-footer{display:block;width:100%;max-width:320px;height:50px;margin:0.5rem auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.ad-banner-footer-desktop{display:block;width:100%;max-width:468px;height:60px;margin:0.5rem auto;background:rgba(21,24,38,.5);border:1px dashed var(--panel-border);border-radius:8px;}.conversion-btn{flex-grow:1;background:0 0;border:1px solid var(--panel-border);color:var(--text-muted);padding:8px;border-radius:8px;cursor:pointer;transition:all .2s ease;font-family:var(--font-main);font-weight:600}.conversion-btn:hover{background-color:var(--panel-border);color:var(--text-color);transform:scale(1.05)}#conversion-buttons{display:none;flex-wrap:wrap;gap:.5rem;margin-top:1rem;animation:fadeIn 0.5s ease}.footer-action-bar{display:flex;justify-content:space-around;align-items:center;padding:4px 0}.generate-btn{background:linear-gradient(45deg,var(--primary-accent),var(--secondary-accent));color:#fff;border:none;padding:12px 24px;border-radius:12px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 20px rgba(155,89,182,.4);animation:pulse 2s infinite}.generate-btn:hover{transform:translateY(-3px);box-shadow:0 6px 25px rgba(155,89,182,.6)}.generate-btn:active{transform:translateY(-1px)}.icon-btn{background:0 0;border:none;color:var(--text-muted);cursor:pointer;font-size:1.2rem;transition:all .2s ease;width:48px;height:48px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center}.icon-btn:hover{background:rgba(155,89,182,0.2);color:var(--primary-accent);transform:scale(1.1)}.modal-overlay,.history-panel{transition:transform .3s ease,opacity .3s ease}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);z-index:5000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden}.modal-overlay.active{opacity:1;visibility:visible}.modal-content{max-width:600px;width:90%;background:var(--bg-color);border:1px solid var(--panel-border);border-radius:16px;padding:1.5rem;box-shadow:0 0 60px var(--glow-color);max-height:80vh;display:flex;flex-direction:column;animation:fadeIn 0.3s ease}.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}.modal-body{overflow-y:auto;padding-right:10px}.category-list .category-title{font-weight:700;color:var(--primary-accent);margin-top:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--panel-border);text-align:left;animation:glow 3s infinite}.template-item,.category-item{padding:12px;border-radius:8px;cursor:pointer;transition:background-color .2s;text-align:left}.template-item:hover,.category-item:hover{background:rgba(155,89,182,0.2);color:var(--primary-accent)}.history-panel{position:fixed;top:0;right:0;bottom:0;width:300px;max-width:80vw;background:#0a0c14;border-left:1px solid var(--panel-border);transform:translateX(100%);z-index:6000;display:flex;flex-direction:column;animation:slideIn 0.3s ease}.history-panel.active{transform:translateX(0)}.footer-info{text-align:center;font-size:.8rem;color:var(--text-muted);padding:5px 0;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.footer-info span{margin:0 5px}.footer-info a{color:var(--primary-accent);text-decoration:none;margin:0 5px;transition:color 0.3s ease}.footer-info a:hover{text-decoration:underline;color:var(--secondary-accent)}#token-count-display{font-family:var(--font-mono);font-size:.9rem;color:var(--text-muted);margin-top:1rem;text-align:right;opacity:0;transition:opacity .3s ease}#token-count-display.visible{opacity:1}.input-options{display:flex;justify-content:flex-end;align-items:center;padding:.5rem 1rem 0}.auto-correct-label{display:flex;align-items:center;cursor:pointer;font-size:.9rem;color:var(--text-muted);transition:color 0.3s ease}.auto-correct-label:hover{color:var(--text-color)}.auto-correct-label input{margin-right:8px;accent-color:var(--primary-accent)}.json-output{background-color:rgba(0,0,0,.3);border-radius:8px;padding:1rem;font-family:var(--font-mono);white-space:pre-wrap;overflow-x:auto;animation:fadeIn 0.5s ease}.seo-content{max-width:800px;margin:2rem auto;padding:1.5rem;background:var(--panel-bg);border-radius:16px;border:1px solid var(--panel-border);animation:fadeIn 1.5s ease}.seo-content h2{color:var(--primary-accent);margin-bottom:1rem;animation:glow 4s infinite}.seo-content h3{color:var(--text-color);margin-top:1.5rem;margin-bottom:.5rem}.seo-content p,.seo-content li{color:var(--text-muted);line-height:1.6;margin-bottom:.8rem}.seo-content ul,.seo-content ol{padding-left:1.5rem;margin-bottom:1rem}.ad-desktop{display:none}.ad-mobile{display:block}@media (min-width:768px){.ad-desktop{display:block}.ad-mobile{display:none}}.content-wrapper{display:flex;flex-direction:column;align-items:center;width:100%}@media (min-width:1024px){.content-wrapper{flex-direction:row;justify-content:center;align-items:flex-start}.main-panel{margin-right:20px}.sidebar-ad-container{width:160px;flex-shrink:0;margin-top:1rem}}.sidebar-ad-container{display:none}@media (min-width:1024px){.sidebar-ad-container{display:block}}.top-generate-container{display:flex;justify-content:center;align-items:center;margin-top:1rem;gap:1rem}.instagram-btn{background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:0.9rem;font-weight:600;cursor:pointer;transition:all .3s ease;display:flex;align-items:center;gap:5px;text-decoration:none;animation:pulse 3s infinite}.instagram-btn:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(188,24,136,.6)}.seo-ad-container{display:flex;justify-content:center;margin:1.5rem 0}.privacy-policy,.about-us{max-width:800px;margin:2rem auto;padding:1.5rem;background:var(--panel-bg);border-radius:16px;border:1px solid var(--panel-border);color:var(--text-color);line-height:1.6;animation:fadeIn 1.5s ease}.privacy-policy h2,.about-us h2{color:var(--primary-accent);margin-bottom:1.5rem;font-size:2rem;text-align:center;animation:glow 4s infinite}.privacy-policy h3,.about-us h3{color:var(--text-color);margin-top:2rem;margin-bottom:1rem;font-size:1.3rem}.privacy-policy h4,.about-us h4{color:var(--text-color);margin-top:1.5rem;margin-bottom:.8rem;font-size:1.1rem}.privacy-policy p,.about-us p{color:var(--text-muted);margin-bottom:1rem}.privacy-policy a,.about-us a{color:var(--primary-accent);text-decoration:none;transition:color 0.3s ease}.privacy-policy a:hover,.about-us a:hover{text-decoration:underline;color:var(--secondary-accent)}.company-info,.mission,.product,.team,.contact,.future{margin-bottom:2rem;padding:1rem;background:rgba(21,24,38,.5);border-radius:8px;transition:transform 0.3s ease, box-shadow 0.3s ease}.company-info:hover,.mission:hover,.product:hover,.team:hover,.contact:hover,.future:hover{transform:translateY(-5px);box-shadow:0 5px 20px rgba(155,89,182,0.3)}.leader{padding:1rem;background:rgba(155,89,182,.1);border-radius:8px;margin-top:1rem}.logo-container{display:flex;align-items:center;gap:10px}.logo{width:40px;height:40px;border-radius:8px;background-color:var(--primary-accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:1.2rem;}.install-button{background:linear-gradient(45deg,var(--primary-accent),var(--secondary-accent));color:#fff;border:none;padding:6px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;cursor:pointer;transition:all .3s ease;box-shadow:0 2px 10px rgba(155,89,182,.4);display:flex;align-items:center;gap:5px;}.install-button:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(155,89,182,.6);}.install-button:active{transform:translateY(0);}h1,h2,h3,h4,h5,h6{color:var(--text-color);margin-bottom:0.5rem}a{color:var(--primary-accent);text-decoration:none;transition:color 0.3s ease}a:hover{color:var(--secondary-accent)}button{transition:all 0.3s ease}input,textarea{transition:border-color 0.3s ease}.notification{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--primary-accent);color:white;padding:10px 20px;border-radius:8px;z-index:10000;animation:fadeIn 0.3s ease, pulse 2s infinite}.notification.success{background:var(--success-color)}.notification.error{background:var(--error-color)}.notification.warning{background:var(--warning-color)}
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" media="print" onload="this.media='all'"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'"/>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    </noscript>
+</head>
+<body>
+    <div class="os-container">
+        <header class="os-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s1024/IMG_20250928_223807.png" alt="PromptOS Logo" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+                </div>
+                <h1 style="font-size: 1.5rem;">PromptOS <span style="color:#b0c4de; font-weight: 600; font-size: 0.7em;">| AI Co-pilot</span></h1>
+            </div>
+            <button class="install-button" id="install-button">
+                <i class="fa-solid fa-download"></i>
+                <span>Install</span>
+            </button>
+        </header>
+        <main class="os-main">
+            <div class="content-wrapper">
+                <div class="main-panel">
+                    <!-- Header Ad Placeholder -->
+                    <div id="ad-placeholder-header" class="ad-placeholder">
+                        <!-- Mobile Ad Banner -->
+                        <div class="ad-mobile">
+                            <div class="ad-banner-mobile" id="ad-banner-header-mobile">
+                                <!-- Ad placeholder - Ad script removed -->
+                            </div>
+                        </div>
+                        <!-- Desktop Ad Banner -->
+                        <div class="ad-desktop">
+                            <div class="ad-banner" id="ad-banner-header-desktop">
+                                <!-- Ad placeholder - Ad script removed -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-card">
+                        <div class="textarea-wrapper">
+                            <textarea id="prompt-canvas" placeholder="Type a simple idea... AI will create a masterpiece."></textarea>
+                        </div>
+                        <div class="input-options">
+                            <label class="auto-correct-label" for="auto-correct-toggle">
+                                <input type="checkbox" id="auto-correct-toggle" title="Automatically correct spelling and grammar in your input"/>
+                                Auto-Correct Input
+                            </label>
+                        </div>
+                        <!-- Top Generate Button with Copy and Share -->
+                        <div class="top-generate-container">
+                            <button id="copy-btn-top" class="icon-btn" title="Copy Prompt"><i class="fa-solid fa-copy"></i></button>
+                            <button id="generate-btn-top" class="generate-btn"><i class="fa-solid fa-rocket"></i><span> Generate</span></button>
+                            <button id="share-btn-top" class="icon-btn" title="Share Prompt"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                        <!-- Instagram Follow Button -->
+                        <div class="top-generate-container">
+                            <a href="https://www.instagram.com/looplabstech?igsh=MW11cDRoMnhmdDBqaw==" target="_blank" class="instagram-btn">
+                                <i class="fab fa-instagram"></i>
+                                <span>Follow us on Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="panel-title" style="font-size: 1.1rem;">✨ AI-Crafted Professional Prompt</h3>
+                            <button class="icon-btn" id="settings-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+                        </div>
+                        <div id="conversion-buttons">
+                            <button id="convert-context-btn" class="conversion-btn">Contextual</button>
+                            <button id="convert-json-btn" class="conversion-btn">JSON</button>
+                            <button id="convert-sql-btn" class="conversion-btn">SQL</button>
+                            <button id="convert-yaml-btn" class="conversion-btn">YAML</button>
+                            <button id="convert-xml-btn" class="conversion-btn">XML</button>
+                            <button id="convert-graph-btn" class="conversion-btn">Graph</button>
+                        </div>
+                        
+                        <!-- Middle Ad Placeholder 1 -->
+                        <div id="ad-placeholder-middle-1" class="ad-placeholder">
+                            <div class="ad-banner-middle" id="ad-banner-middle-1">
+                                <!-- Ad placeholder - Ad script removed -->
+                            </div>
+                        </div>
+                        
+                        <!-- Middle Ad Placeholder 2 -->
+                        <div id="ad-placeholder-middle-2" class="ad-placeholder">
+                            <div class="ad-banner-middle" id="ad-banner-middle-2">
+                                <!-- Ad placeholder - Ad script removed -->
+                            </div>
+                        </div>
+                        
+                        <div id="output-preview">Your professional prompt will appear here.</div>
+                        <div id="token-count-display"><i class="fa-solid fa-coins"></i> Approx. <span id="token-count">0</span> tokens</div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar Ad Placeholder -->
+                <div class="sidebar-ad-container">
+                    <div class="ad-banner-sidebar" id="ad-banner-sidebar">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SEO Content Section -->
+            <div class="seo-content">
+                <!-- Ad above main heading -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-main">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h2>About PromptOS: Your Ultimate AI Prompt Generator</h2>
+                <p>PromptOS is a revolutionary free AI prompt generator that transforms your simple ideas into expert-level prompts for any task. Whether you're a digital artist, software developer, business strategist, or content creator, our intelligent engine will help you unlock the full potential of artificial intelligence.</p>
+                
+                <!-- Ad above Why Choose PromptOS -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-why">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>Why Choose PromptOS?</h3>
+                <p>In today's rapidly evolving digital landscape, the quality of your prompts determines the quality of AI-generated content. PromptOS bridges the gap between human creativity and AI capabilities by providing structured, detailed prompts that deliver consistent, professional results.</p>
+                
+                <!-- Ad above Key Features -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-features">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Intelligent Analysis:</strong> Our system analyzes your input and automatically categorizes it into the appropriate domain (art, code, business, writing, science, or general).</li>
+                    <li><strong>Structured Output:</strong> Generates comprehensive prompts with clear goals, return formats, warnings, and contextual information.</li>
+                    <li><strong>Format Conversion:</strong> Convert your prompts to JSON, SQL, YAML, XML, Graph, or contextual format for better AI understanding.</li>
+                    <li><strong>Template Library:</strong> Access a vast collection of pre-built templates for various use cases across different domains.</li>
+                    <li><strong>History Tracking:</strong> Save and retrieve your previous prompts for future reference and reuse.</li>
+                    <li><strong>Token Counter:</strong> Estimate token usage to optimize your prompts for different AI platforms.</li>
+                    <li><strong>Sharing Capability:</strong> Share your favorite prompts with friends and colleagues.</li>
+                </ul>
+                
+                <!-- Ad above How to Use -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-howto">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>How to Use PromptOS</h3>
+                <ol>
+                    <li>Enter your simple idea or request in the text area</li>
+                    <li>Click the "Generate" button to create an expert-level prompt</li>
+                    <li>Copy the generated prompt or convert it to your preferred format</li>
+                    <li>Use the prompt with your favorite AI tool (ChatGPT, Midjourney, DALL-E, etc.)</li>
+                </ol>
+                
+                <!-- Ad above Applications -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-applications">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>Applications Across Industries</h3>
+                <p>PromptOS is designed to serve professionals across various industries:</p>
+                <ul>
+                    <li><strong>Creative Arts:</strong> Generate detailed prompts for image generation, character design, and artistic concepts</li>
+                    <li><strong>Software Development:</strong> Create structured prompts for code generation, debugging, and documentation</li>
+                    <li><strong>Business Strategy:</strong> Develop prompts for market analysis, business planning, and strategic decision-making</li>
+                    <li><strong>Content Creation:</strong> Craft prompts for blog posts, social media content, and marketing copy</li>
+                    <li><strong>Research &amp; Science:</strong> Formulate prompts for data analysis, research summaries, and scientific explanations</li>
+                </ul>
+                
+                <!-- Ad above Future of Prompting -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-future">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>Future of Prompting</h3>
+                <p>As AI technology continues to evolve, so will prompt engineering. We're already exploring advanced prompt formats like:</p>
+                <ul>
+                    <li><strong>SQL-Based Prompts:</strong> Structured query language for precise data filtering and retrieval</li>
+                    <li><strong>YAML-Based Prompts:</strong> Human-readable configuration format for complex task definitions</li>
+                    <li><strong>Natural Language Query Language:</strong> Hybrid model that converts natural language to structured queries</li>
+                    <li><strong>Graph-Based Prompts:</strong> Advanced format for defining relationships between data points</li>
+                </ul>
+                
+                <!-- Ad above Join the AI Revolution -->
+                <div class="ad-placeholder">
+                    <div class="ad-banner-small" id="ad-banner-seo-join">
+                        <!-- Ad placeholder - Ad script removed -->
+                    </div>
+                </div>
+                
+                <h3>Join the AI Revolution</h3>
+                <p>As artificial intelligence continues to transform industries, the ability to communicate effectively with AI systems becomes increasingly valuable. PromptOS empowers you to harness the full potential of AI technology, regardless of your technical expertise.</p>
+                <p>Start creating professional-grade AI prompts today and experience the difference that expert-level prompting can make in your creative and professional projects.</p>
+            </div>
+        </main>
+        <footer class="os-footer">
+            <!-- Footer Ad Placeholder -->
+            <div class="ad-placeholder">
+                <div class="ad-banner-footer" id="ad-banner-footer-mobile">
+                    <!-- Ad placeholder - Ad script removed -->
+                </div>
+                <div class="ad-banner-footer-desktop" id="ad-banner-footer-desktop">
+                    <!-- Ad placeholder - Ad script removed -->
+                </div>
+            </div>
+            
+            <div class="footer-action-bar">
+                <button class="icon-btn" id="history-btn" title="History"><i class="fa-solid fa-clock-rotate-left"></i></button>
+                <button class="icon-btn" id="search-btn" title="Search Templates"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="generate-btn" class="generate-btn"><i class="fa-solid fa-rocket"></i><span> Generate</span></button>
+                <button class="icon-btn" id="copy-btn" title="Copy Prompt"><i class="fa-solid fa-copy"></i></button>
+                <button class="icon-btn" id="share-btn" title="Share Prompt"><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+            <div class="footer-info">
+                <span id="copyright"></span>
+                <a href="https://www.instagram.com/looplabstech?igsh=MW11cDRoMnhmdDBqaw==" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                <a href="#about-us-modal" id="about-link">About Us</a>
+                <a href="#privacy-policy-modal" id="privacy-link">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Template Modal -->
+    <div class="modal-overlay" id="template-modal"></div>
+    
+    <!-- History Panel -->
+    <div class="history-panel" id="history-panel"></div>
+    
+    <!-- Share Modal -->
+    <div class="modal-overlay" id="share-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Share PromptOS</h2>
+                <button class="icon-btn" id="share-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom: 1rem;">
+                    <p style="margin-bottom: 1rem;">Share PromptOS with others and help them discover the power of AI prompts:</p>
+                    <div class="share-options" style="display: flex; justify-content: space-around; margin-bottom: 1rem;">
+                        <button class="share-option" data-platform="facebook" style="background: none; border: none; color: #4267B2; font-size: 2rem; cursor: pointer;">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button class="share-option" data-platform="twitter" style="background: none; border: none; color: #1DA1F2; font-size: 2rem; cursor: pointer;">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-option" data-platform="whatsapp" style="background: none; border: none; color: #25D366; font-size: 2rem; cursor: pointer;">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="share-option" data-platform="linkedin" style="background: none; border: none; color: #0077B5; font-size: 2rem; cursor: pointer;">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <button class="share-option" data-platform="copy" style="background: none; border: none; color: var(--primary-accent); font-size: 2rem; cursor: pointer;">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem;">Or copy the website link:</p>
+                    <div style="display: flex;">
+                        <input type="text" id="share-link" readonly="readonly" style="flex-grow: 1; padding: 8px; border-radius: 8px 0 0 8px; border: 1px solid var(--panel-border); background: var(--panel-bg); color: var(--text-color);"/>
+                        <button id="copy-link-btn" style="padding: 8px 16px; border-radius: 0 8px 8px 0; border: 1px solid var(--panel-border); background: var(--primary-accent); color: white; cursor: pointer;">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Us Modal -->
+    <div class="modal-overlay" id="about-us-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About Us</h2>
+                <button class="icon-btn" id="about-us-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="about-us">
+                    <div class="company-info">
+                        <h3>Our Company</h3>
+                        <p>PromptOS is developed by LoopLabs, a technology company dedicated to creating innovative AI tools that empower creators, developers, and businesses to harness the full potential of artificial intelligence.</p>
+                    </div>
+                    
+                    <div class="mission">
+                        <h3>Our Mission</h3>
+                        <p>Our mission is to democratize access to high-quality AI prompting tools. We believe that everyone should be able to communicate effectively with AI systems, regardless of their technical expertise. PromptOS was born from the need to bridge the gap between human creativity and AI capabilities.</p>
+                    </div>
+                    
+                    <div class="product">
+                        <h3>Our Product</h3>
+                        <p>PromptOS is a free AI prompt generator that transforms simple ideas into expert-level prompts. Our intelligent engine analyzes your input and automatically structures it into comprehensive prompts that deliver consistent, professional results across various domains including art, code, business, writing, and science.</p>
+                    </div>
+                    
+                    <div class="team">
+                        <h3>Our Team</h3>
+                        <p>We are a diverse team of AI researchers, software engineers, designers, and creative professionals passionate about the potential of artificial intelligence to transform industries and empower individuals.</p>
+                        
+                        <div class="leader">
+                            <h4>Leadership</h4>
+                            <p>Founded by a team with extensive experience in AI development, user experience design, and digital product innovation. Our leadership is committed to maintaining the highest standards of quality, privacy, and user satisfaction.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <p>We'd love to hear from you! Whether you have feedback, suggestions, or just want to say hello, feel free to reach out to us on Instagram at <a href="https://www.instagram.com/looplabstech?igsh=MW11cDRoMnhmdDBqaw==" target="_blank" rel="noopener noreferrer">@looplabstech</a>.</p>
+                    </div>
+                    
+                    <div class="future">
+                        <h3>Our Vision</h3>
+                        <p>As AI technology continues to evolve, so will PromptOS. We are committed to continuous improvement and innovation, regularly adding new features, templates, and capabilities to ensure that PromptOS remains at the forefront of AI prompting technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Privacy Policy Modal -->
+    <div class="modal-overlay" id="privacy-policy-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button class="icon-btn" id="privacy-policy-close-btn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="privacy-policy">
+                    <h3>Information We Collect</h3>
+                    <p>PromptOS respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our website and services.</p>
+                    
+                    <h4>Personal Information</h4>
+                    <p>We do not require you to create an account or provide personal information to use PromptOS. However, we may collect certain information automatically when you visit our website, such as:</p>
+                    <ul>
+                        <li>IP address and browser information</li>
+                        <li>Device information and operating system</li>
+                        <li>Pages visited and time spent on our site</li>
+                        <li>Referring websites</li>
+                    </ul>
+                    
+                    <h4>Usage Data</h4>
+                    <p>We collect information about how you interact with PromptOS, including:</p>
+                    <ul>
+                        <li>The prompts you generate (stored locally in your browser)</li>
+                        <li>Your interaction history (stored locally in your browser)</li>
+                        <li>Settings and preferences (stored locally in your browser)</li>
+                    </ul>
+                    
+                    <h3>How We Use Your Information</h3>
+                    <p>We use the collected information for the following purposes:</p>
+                    <ul>
+                        <li>To provide and maintain our service</li>
+                        <li>To improve, personalize, and expand our service</li>
+                        <li>To understand and analyze how you use our service</li>
+                        <li>To develop new products, services, features, and functionality</li>
+                        <li>To communicate with you about updates and changes</li>
+                    </ul>
+                    
+                    <h3>Data Storage and Security</h3>
+                    <p>Your prompt history and preferences are stored locally in your browser using localStorage. This data is not transmitted to our servers and remains on your device. You can clear this data at any time through your browser settings or by using the "Clear All History" feature in PromptOS.</p>
+                    
+                    <p>We implement appropriate security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+                    
+                    <h3>Third-Party Services</h3>
+                    <p>Our website may contain links to third-party websites and services, including:</p>
+                    <ul>
+                        <li>Google Fonts for typography</li>
+                        <li>Font Awesome for icons</li>
+                        <li>CDN providers for performance optimization</li>
+                    </ul>
+                    <p>These third-party services have their own privacy policies, and we are not responsible for their practices. We encourage you to review the privacy policies of these third parties.</p>
+                    
+                    <h3>Children's Privacy</h3>
+                    <p>PromptOS is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so that we can delete such information.</p>
+                    
+                    <h3>Changes to This Privacy Policy</h3>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the bottom.</p>
+                    
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us through our Instagram at <a href="https://www.instagram.com/looplabstech?igsh=MW11cDRoMnhmdDBqaw==" target="_blank" rel="noopener noreferrer">@looplabstech</a>.</p>
+                    
+                    <p><em>Last updated: May 24, 2024</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Token Counter Library - Fixed version -->
+    <script>
+    //<![CDATA[
+    window.tiktoken = window.tiktoken || { getEncoding: async function(encodingName) { return { encode: function(text) { const words = text.split(/\s+/).filter(word => word.length > 0); return Array(Math.ceil(words.length * 0.75)).fill(0); } }; } };
+    //]]>
+    </script>
+    
+    <!-- Defer non-critical JavaScript -->
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/tiktoken@1.0.14/lite/init_tiktoken_wasm.js"></script>
+    
+    <script defer="defer">
+    //<![CDATA[
+    document.addEventListener('DOMContentLoaded', async () => {
+        try {
+            document.getElementById('copyright').innerHTML = '&copy; ' + new Date().getFullYear() + ' PromptOS by LoopLabs. All Rights Reserved.';
+            let encoding;
+            const tokenCountElement = document.getElementById('token-count');
+            const tokenDisplayElement = document.getElementById('token-count-display');
+            try {
+                encoding = await tiktoken.getEncoding("cl100k_base");
+            } catch (error) {
+                console.warn("Could not initialize token counter. Feature will be disabled.", error);
+                if(tokenDisplayElement) tokenDisplayElement.style.display = 'none';
+            }
+            const PromptOS = {
+                state: { 
+                    finalPrompt: '', 
+                    parsedPromptData: null, 
+                    history: [],
+                    isJsonFormat: false,
+                    isSqlFormat: false,
+                    isYamlFormat: false,
+                    isXmlFormat: false,
+                    isGraphFormat: false
+                },
+                elements: {},
+                templateDB: {
+                    "Business Guides": [{name: "SWOT Analysis", idea: "a SWOT analysis for a new coffee shop"}, {name: "Elevator Pitch", idea: "a 30-second elevator pitch for a new tech startup"}, {name: "Cold Email Outreach", idea: "a cold email to a potential client offering web design services"}, {name: "Business Plan Outline", idea: "an outline for a business plan for an online clothing store"}, {name: "Market Research Questions", idea: "a list of questions for market research on a new mobile app"}, {name: "Press Release", idea: "a press release announcing a new product launch"}, {name: "Job Description", idea: "a job description for a senior marketing manager"}, {name: "Performance Review", idea: "a template for an employee performance review"}, {name: "Meeting Agenda", idea: "an agenda for a weekly team meeting"}, {name: "Investor Update", idea: "a monthly update email for investors"}],
+                    "Brand Study": [{name: "Brand Competitor Analysis", idea: "an analysis of the top 3 competitors for Nike"}, {name: "Brand Failure Analysis", idea: "an analysis of why Blockbuster failed"}, {name: "Brand History Summary", idea: "a summary of the history of Coca-Cola"}, {name: "Brand Statistics Report", idea: "a report on the market share statistics of Apple"}, {name: "Business Model Canvas", idea: "a business model canvas for Spotify"}, {name: "Brand Strategy Outline", idea: "an outline of a brand strategy for a new luxury car brand"}, {name: "Target Audience Persona", idea: "a target audience persona for a new gaming console"}, {name: "Brand Voice &amp; Tone Guide", idea: "a guide for the brand voice and tone of a friendly, approachable SaaS company"}, {name: "Logo Concept Brief", idea: "a brief for a logo designer for a new vegan restaurant"}, {name: "Slogan Generation", idea: "generate 10 slogans for a new brand of eco-friendly cleaning products"}],
+                    "Startup Essentials": [{name: "Startup Pitch Deck Outline", idea: "an outline for a 10-slide startup pitch deck"}, {name: "Lean Canvas", idea: "a lean canvas for a new food delivery app"}, {name: "Value Proposition Statement", idea: "a value proposition statement for an online learning platform"}, {name: "Go-to-Market Strategy", idea: "a go-to-market strategy for a new productivity tool"}, {name: "Financial Projections", idea: "a simple 3-year financial projection for a small business"}, {name: "User Persona Development", idea: "a set of user personas for a new social media app"}, {name: "Minimum Viable Product (MVP) Features", idea: "a list of MVP features for a new project management tool"}, {name: "Investor Questions Prep", idea: "a list of common questions investors ask startups"}, {name: "Cap Table Template", idea: "a simple capitalization table for a startup with two founders"}, {name: "Term Sheet Explained", idea: "explain the key terms in a startup term sheet"}],
+                    "AI Tools &amp; Prompts": [{name: "ChatGPT Prompt for Summarization", idea: "a prompt to make ChatGPT summarize a long article"}, {name: "Midjourney Prompt for Characters", idea: "a Midjourney prompt for a photorealistic fantasy elf"}, {name: "Stable Diffusion Prompt for Landscapes", idea: "a Stable Diffusion prompt for a breathtaking mountain landscape"}, {name: "AI Business Idea Generator", idea: "generate 5 business ideas using AI"}, {name: "AI Elevator Pitch Generator", idea: "generate an elevator pitch for an AI-powered personal assistant"}, {name: "AI Code Debugging Prompt", idea: "a prompt to help debug a Python script"}, {name: "AI Content Marketing Strategy", idea: "an AI-driven content marketing strategy"}, {name: "AI Email Subject Line Generator", idea: "generate 10 catchy email subject lines for a sale"}, {name: "AI Social Media Post Generator", idea: "generate a week of social media posts for a coffee shop"}, {name: "AI Persona Creator", idea: "create a detailed user persona for a fitness app"}],
+                    "🎨 Creative Arts &amp; Design": [{ name: "Character Concept Art", idea: "Detailed concept art of a futuristic bounty hunter" }, { name: "Architectural Visualization", idea: "Photorealistic render of a modern glass house in a forest" }, { name: "Logo Design Brief", idea: "Create a design brief for a minimalist logo for an organic skincare brand" }, { name: "Album Cover Art", idea: "concept art for a synthwave album cover"}, {name: "T-Shirt Design", idea: "a vintage-style t-shirt design for a national park"}, {name: "Infographic Design", idea: "design an infographic about the benefits of hydration"}, {name: "Book Cover Concept", idea: "a concept for a fantasy novel book cover"}, {name: "Interior Design Moodboard", idea: "a moodboard for a Scandinavian-style living room"}, {name: "Fashion Sketch", idea: "a fashion sketch of a futuristic streetwear outfit"}, {name: "3D Model Idea", idea: "an idea for a low-poly 3D model of a fantasy creature"}],
+                    "💻 Software Development": [{ name: "Python API Endpoint", idea: "Write a Python Flask API endpoint to fetch user data" }, { name: "JavaScript Component", idea: "Create a reusable React component for a pricing card" }, { name: "SQL Database Schema", idea: "Design an SQL schema for a simple e-commerce website"}, {name: "Unit Test Generation", idea: "write unit tests for a javascript function that calculates sales tax"}, {name: "Code Refactoring", idea: "refactor this messy python script to be more readable"}, {name: "Algorithm Explanation", idea: "explain the quicksort algorithm in simple terms"}, {name: "DevOps CI/CD Pipeline", idea: "outline a simple CI/CD pipeline for a web app using GitHub Actions"}, {name: "API Documentation", idea: "write API documentation for a user authentication endpoint"}, {name: "Regex Generator", idea: "create a regex to validate a phone number"}, {name: "Docker File Creation", idea: "create a Dockerfile for a basic Node.js application"}]
+                },
+                init() {
+                    this.cacheElements();
+                    this.attachEventListeners();
+                    this.loadHistory();
+                    
+                    // Check if PWA is supported and register service worker
+                    if ('serviceWorker' in navigator) {
+                        this.registerServiceWorker();
+                    }
+                    
+                    // Add install button functionality
+                    this.addInstallButtonFunctionality();
+                    
+                    // Add license warning
+                    this.addLicenseWarning();
+                    
+                    // Add modal event listeners
+                    this.addModalEventListeners();
+                },
+                
+                cacheElements() {
+                    this.elements = {
+                        canvas: document.getElementById('prompt-canvas'),
+                        output: document.getElementById('output-preview'),
+                        templateModal: document.getElementById('template-modal'),
+                        historyPanel: document.getElementById('history-panel'),
+                        conversionButtons: document.getElementById('conversion-buttons'),
+                        shareModal: document.getElementById('share-modal'),
+                        shareLink: document.getElementById('share-link')
+                    };
+                },
+                
+                attachEventListeners() {
+                    document.getElementById('search-btn').addEventListener('click', () => this.showSearchModal());
+                    document.getElementById('generate-btn').addEventListener('click', () => this.generateFullPrompt());
+                    document.getElementById('generate-btn-top').addEventListener('click', () => this.generateFullPrompt());
+                    
+                    document.getElementById('copy-btn').addEventListener('click', () => this.copyPrompt());
+                    document.getElementById('copy-btn-top').addEventListener('click', () => this.copyPrompt());
+
+                    document.getElementById('history-btn').addEventListener('click', () => this.toggleHistoryPanel(true));
+                    
+                    document.getElementById('settings-btn').addEventListener('click', () => {
+                        this.showNotification('New features coming soon!');
+                    });
+                    
+                    // Conversion buttons
+                    this.elements.conversionButtons.querySelector('#convert-context-btn').addEventListener('click', () => this.convertToContextual());
+                    this.elements.conversionButtons.querySelector('#convert-json-btn').addEventListener('click', () => this.convertToJson());
+                    this.elements.conversionButtons.querySelector('#convert-sql-btn').addEventListener('click', () => this.convertToSql());
+                    this.elements.conversionButtons.querySelector('#convert-yaml-btn').addEventListener('click', () => this.convertToYaml());
+                    this.elements.conversionButtons.querySelector('#convert-xml-btn').addEventListener('click', () => this.convertToXml());
+                    this.elements.conversionButtons.querySelector('#convert-graph-btn').addEventListener('click', () => this.convertToGraph());
+                    
+                    // Share button
+                    document.getElementById('share-btn').addEventListener('click', () => this.showShareModal());
+                    document.getElementById('share-btn-top').addEventListener('click', () => this.showShareModal());
+                    document.getElementById('share-close-btn').addEventListener('click', () => this.hideShareModal());
+                    
+                    // Share options
+                    document.querySelectorAll('.share-option').forEach(option => {
+                        option.addEventListener('click', (e) => {
+                            e.preventDefault(); 
+                            const platform = e.currentTarget.dataset.platform;
+                            this.sharePrompt(platform);
+                        });
+                    });
+                    
+                    // Copy link button
+                    document.getElementById('copy-link-btn').addEventListener('click', (e) => {
+                        e.preventDefault(); 
+                        this.elements.shareLink.select();
+                        document.execCommand('copy');
+                        this.showNotification('Link copied to clipboard!');
+                    });
+                },
+                
+                addModalEventListeners() {
+                    // About Us modal
+                    document.getElementById('about-link').addEventListener('click', (e) => {
+                        e.preventDefault();
+                        document.getElementById('about-us-modal').classList.add('active');
+                    });
+                    
+                    document.getElementById('about-us-close-btn').addEventListener('click', () => {
+                        document.getElementById('about-us-modal').classList.remove('active');
+                    });
+                    
+                    // Privacy Policy modal
+                    document.getElementById('privacy-link').addEventListener('click', (e) => {
+                        e.preventDefault();
+                        document.getElementById('privacy-policy-modal').classList.add('active');
+                    });
+                    
+                    document.getElementById('privacy-policy-close-btn').addEventListener('click', () => {
+                        document.getElementById('privacy-policy-modal').classList.remove('active');
+                    });
+                    
+                    // Close modals when clicking outside
+                    document.querySelectorAll('.modal-overlay').forEach(modal => {
+                        modal.addEventListener('click', (e) => {
+                            if (e.target === modal) {
+                                modal.classList.remove('active');
+                            }
+                        });
+                    });
+                },
+                
+                addLicenseWarning() {
+                    // Console warning about license
+                    console.log('%c⚠️ LICENSE WARNING ⚠️', 'color: #9b59b6; font-size: 24px; font-weight: bold;');
+                    console.log('%cThis software is licensed under the PromptOS Restricted License.', 'color: #333; font-size: 16px;');
+                    console.log('%cPersonal use is permitted, but modification and commercial use require explicit permission.', 'color: #333; font-size: 16px;');
+                    console.log('%cFor inquiries, please contact: Instagram @looplabstech', 'color: #333; font-size: 16px;');
+                },
+                
+                registerServiceWorker() {
+                    // Check if the current page is served over HTTPS or localhost
+                    if (window.location.protocol === 'https:' || window.location.hostname === 'localhost') {
+                        navigator.serviceWorker.register('/sw.js').then(registration => {
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }).catch(error => {
+                            console.log('ServiceWorker registration failed: ', error);
+                        });
+                    }
+                },
+                
+                addInstallButtonFunctionality() {
+                    const installButton = document.getElementById('install-button');
+                    
+                    // Check if the app is already installed
+                    if (window.matchMedia('(display-mode: standalone)').matches) {
+                        installButton.style.display = 'none';
+                    }
+                    
+                    // Show install button when the app can be installed
+                    window.addEventListener('beforeinstallprompt', (event) => {
+                        // Prevent the default browser install prompt
+                        event.preventDefault();
+                        // Store the event for later use
+                        this.deferredPrompt = event;
+                        // Show the install button
+                        installButton.style.display = 'flex';
+                    });
+                    
+                    // Install the app when the button is clicked
+                    installButton.addEventListener('click', () => {
+                        if (this.deferredPrompt) {
+                            // Show the install prompt
+                            this.deferredPrompt.prompt();
+                            // Wait for the user to respond to the prompt
+                            this.deferredPrompt.userChoice.then((choiceResult) => {
+                                if (choiceResult.outcome === 'accepted') {
+                                    this.showNotification('App installed successfully!');
+                                } else {
+                                    this.showNotification('App installation was cancelled.');
+                                }
+                                this.deferredPrompt = null;
+                            });
+                        }
+                    });
+                    
+                    // Hide the install button when the app is installed
+                    window.addEventListener('appinstalled', () => {
+                        installButton.style.display = 'none';
+                        this.showNotification('App installed successfully!');
+                    });
+                },
+                
+                analyzeIntent(idea) {
+                    const lowerIdea = idea.toLowerCase();
+                    const creativeArtKeywords = ['photo', 'image', 'art', 'painting', 'render', 'cinematic', 'logo', 'drawing', 'illustration', 'picture', 'portrait', 'potrait', 'rococo', 'style', 'photorealistic', 'concept art', 'design', 'album cover', 't-shirt design', 'infographic', 'book cover', 'interior design', 'fashion sketch', '3d model'];
+                    if (creativeArtKeywords.some(kw => lowerIdea.includes(kw))) return 'creative_art';
+                    const softwareDevKeywords = ['python', 'javascript', 'js', 'react', 'sql', 'code', 'debug', 'refactor', 'algorithm', 'api', 'devops', 'ci/cd', 'regex', 'docker', 'script', 'function', 'test', 'schema', 'program', 'coding'];
+                    if (softwareDevKeywords.some(kw => lowerIdea.includes(kw))) return 'software_dev';
+                    const businessKeywords = ['swot', 'pitch', 'business plan', 'market research', 'press release', 'job description', 'performance review', 'meeting agenda', 'investor update', 'brand analysis', 'business model', 'target audience', 'slogan', 'startup', 'lean canvas', 'value proposition', 'go-to-market', 'financial projection', 'user persona', 'mvp', 'cap table', 'term sheet', 'marketing', 'sales', 'strategy', 'company', 'market', 'competitor', 'revenue'];
+                    if (businessKeywords.some(kw => lowerIdea.includes(kw))) return 'business';
+                    const writingKeywords = ['summarize', 'outline', 'write an email', 'blog post', 'social media', 'story', 'poem', 'lyrics', 'recipe', 'article', 'essay', 'report', 'document', 'content', 'generate text'];
+                    if (writingKeywords.some(kw => lowerIdea.includes(kw))) return 'writing';
+                    const scienceKeywords = ['quantum physics', 'biology', 'chemistry', 'astronomy', 'research', 'theory', 'experiment', 'analysis', 'scientific', 'data analysis', 'scientific report'];
+                    if (scienceKeywords.some(kw => lowerIdea.includes(kw))) return 'science';
+                    return 'general';
+                },
+                
+                generateFullPrompt() {
+                    try {
+                        const autoCorrectCheckbox = document.getElementById('auto-correct-toggle');
+                        let idea = this.elements.canvas.value.trim();
+                        if (!idea) {
+                            this.showNotification("Please type your core idea first!");
+                            return;
+                        }
+                        if (autoCorrectCheckbox.checked) {
+                            idea = 'First, please correct any spelling and grammatical errors in the following user idea. Then, use the corrected and improved version of the idea to fulfill the original request as expertly as possible. Original user idea: "' + idea + '"';
+                        }
+                        
+                        const intent = this.analyzeIntent(idea);
+                        let promptParts = { 
+                            goal: idea, 
+                            returnFormat: '', 
+                            warnings: '', 
+                            contextDump: '',
+                            inputExample: idea,
+                            outputExample: ''
+                        };
+                        
+                        switch(intent) {
+                            case 'creative_art':
+                                promptParts.goal = 'Generate concept art/an image for: "' + idea + '".';
+                                promptParts.returnFormat = 'A high-resolution image description ready for an image generation AI, including artistic style, composition, lighting, and specific details.';
+                                promptParts.warnings = 'Avoid modern elements unless specified. Ensure no cartoonish proportions or overly saturated colors. Focus on the artistic elements.';
+                                promptParts.contextDump = '**Character:**\nAct as a world-class creative director with expertise in visual arts, composition, and historical/modern artistic styles.\n**Instructions:**\n- Deconstruct the core idea into visual components.\n- Suggest a specific artistic style or influence.\n- Describe lighting, camera angle, and mood.\n- Include details about subject, background, and foreground elements.\n**Examples:**\nInspired by François Boucher and Jean-Honoré Fragonard, with soft brushwork, intricate fabrics, and opulent backgrounds. Cinematic lighting similar to Barry Lyndon (naturalistic candlelight glow).\n**Adjustments (Optional):**\n- Camera angle: Slightly low, giving a regal, elevated presence.\n- Lighting: Soft diffused daylight from the left, with gentle shadows for depth.\n- Mood: Graceful, dignified, and slightly whimsical, with warm and inviting atmosphere.\n- Composition: Centered subject, full-length framing, rule-of-thirds alignment for background elements.\n**Extras (Optional):**\n- Details: Elaborate silk gown with floral embroidery and lace trim.\n- Background: A grand palace garden with marble balustrades and blooming roses.\n**Negative Prompts (Optional):**\n- Avoid modern elements, harsh shadows, cartoonish proportions, excessive blur.';
+                                promptParts.outputExample = 'A detailed description of the requested artwork, including style, composition, lighting, and mood elements.';
+                                break;
+                            case 'software_dev':
+                                promptParts.goal = 'Develop a software solution for: "' + idea + '".';
+                                promptParts.returnFormat = 'Well-commented code snippet in the most appropriate language, adhering to best practices. If a script, include execution instructions. If a design, use clear diagrams/descriptions.';
+                                promptParts.warnings = 'Ensure the code is syntactically correct and runnable. Do not include placeholder comments or vague instructions. Prioritize security and efficiency.';
+                                promptParts.contextDump = '**Character:**\nAssume the role of a senior software engineer with expertise in system design, coding best practices, and debugging across various programming languages.\n**Instructions:**\n- Break down the request into logical programming steps.\n- Suggest the most suitable programming language or technology stack.\n- Provide clear, concise, and executable code.\n- Include comments to explain complex logic or critical sections.\n- For API endpoints, define request/response structures.\n- For database schemas, provide table definitions and relationships.\n- For algorithms, explain the logic and time/space complexity.\n**Best Practices:**\n- Follow SOLID principles where applicable.\n- Consider edge cases and error handling.\n- Aim for modularity and reusability.';
+                                promptParts.outputExample = 'A complete code solution with comments explaining the implementation and usage.';
+                                break;
+                            case 'business':
+                                promptParts.goal = 'Generate a business-focused analysis/plan for: "' + idea + '".';
+                                promptParts.returnFormat = 'A structured report or outline, using professional business terminology, presented in a clear and actionable format (e.g., bullet points, numbered lists, specific sections).';
+                                promptParts.warnings = 'Avoid generic advice. Focus on practical, actionable insights relevant to the business context. Do not include financial figures unless explicitly requested and data is provided.';
+                                promptParts.contextDump = '**Character:**\nAct as an experienced business strategist and market analyst with a deep understanding of corporate strategy, market dynamics, and operational efficiency.\n**Instructions:**\n- Deconstruct the business idea into core components (e.g., market, product, competition, strategy).\n- Provide a detailed and insightful analysis.\n- Offer actionable recommendations or a strategic outline.\n- Use appropriate business frameworks (e.g., SWOT, Porter\'s Five Forces, Lean Canvas) if relevant.\n**Audience:**\n- Assume the audience is a stakeholder, investor, or management team seeking professional guidance.';
+                                promptParts.outputExample = 'A comprehensive business analysis with strategic recommendations and actionable insights.';
+                                break;
+                            case 'writing':
+                                promptParts.goal = 'Craft a piece of writing/content about: "' + idea + '".';
+                                promptParts.returnFormat = 'Well-structured text, adhering to specific length (e.g., a paragraph, an email draft, 5 social media posts), tone (e.g., formal, informal, persuasive), and audience requirements.';
+                                promptParts.warnings = 'Avoid plagiarism. Ensure factual accuracy for non-creative pieces. Maintain consistent tone and style throughout. Proofread for grammar and spelling.';
+                                promptParts.contextDump = '**Character:**\nAssume the role of a skilled technical writer, content strategist, or creative storyteller, depending on the context of the idea.\n**Instructions:**\n- Understand the purpose and target audience for the content.\n- Outline key points or arguments before writing.\n- Use clear, concise language.\n- Adapt the tone and style to suit the output format (e.g., conversational for social media, formal for a report).\n- Ensure the content flows logically.\n**Format Guidelines:**\n- For emails: include subject line, greeting, body, and closing.\n- For articles/blog posts: suggest headings and structure.\n- For social media: provide short, engaging posts suitable for platform.';
+                                promptParts.outputExample = 'A well-crafted piece of writing that meets the specified requirements for tone, style, and audience.';
+                                break;
+                            case 'science':
+                                promptParts.goal = 'Explain the scientific concept of: "' + idea + '".';
+                                promptParts.returnFormat = 'A clear, concise, and accurate explanation, using appropriate scientific terminology while also being accessible to the specified audience. Use structured formats like bullet points or numbered lists where beneficial.';
+                                promptParts.warnings = 'Ensure scientific accuracy. Do not oversimplify to the point of being incorrect. Cite hypothetical sources or methodologies if providing a research plan.';
+                                promptParts.contextDump = '**Character:**\nAct as a seasoned scientist and science communicator, capable of breaking down complex concepts for various audiences.\n**Instructions:**\n- Start with a clear definition of the concept.\n- Explain the underlying principles and mechanisms.\n- Provide examples or analogies to aid understanding.\n- Discuss practical applications or implications.\n- Maintain a neutral, objective tone.\n**Audience:**\n- Assume the explanation is for a curious learner with a basic scientific background.';
+                                promptParts.outputExample = 'An accurate yet accessible explanation of the scientific concept, with examples and applications.';
+                                break;
+                            default:
+                                promptParts.goal = 'Provide a comprehensive and expert-level response to: "' + idea + '".';
+                                promptParts.returnFormat = 'A detailed, well-structured, and accurate response presented in clear, concise paragraphs or bullet points, suitable for professional use.';
+                                promptParts.warnings = 'Ensure accuracy and prevent factual errors. Do not provide information outside the scope of the request.';
+                                promptParts.contextDump = '**Character:**\nAssume the role of a highly knowledgeable and versatile expert, capable of breaking down complex requests into actionable insights.\n**Instructions:**\n- Break down the request into its key components.\n- Provide a comprehensive and actionable response.\n- Use clear and professional language.\n- Anticipate common follow-up questions and address them briefly.';
+                                promptParts.outputExample = 'A thorough and expert response that addresses all aspects of the request.';
+                                break;
+                        }
+                        
+                        const standardPrompt = '---\n🎯 Goal\n' + promptParts.goal + '\n---\n📦 Return Format\n' + promptParts.returnFormat + '\n---\n⚠️ Warnings\n' + promptParts.warnings + '\n---\n🗂 Context Dump\n' + promptParts.contextDump + '\n';
+                        
+                        this.state.parsedPromptData = {
+                            standardFormat: standardPrompt,
+                            promptParts: promptParts
+                        };
+                        
+                        this.elements.conversionButtons.style.display = 'flex';
+                        this.updateOutput(standardPrompt, false);
+                    } catch (error) {
+                        console.error("Error during prompt generation:", error);
+                        this.showNotification("An error occurred. Please check the console for details.");
+                    }
+                },
+                
+                convertToJson() {
+                    if (!this.state.parsedPromptData) return;
+                    
+                    const promptParts = this.state.parsedPromptData.promptParts;
+                    const jsonPrompt = {
+                        "request": {
+                            "task_description": promptParts.goal,
+                            "input_schema": {
+                                "type": "object",
+                                "properties": {
+                                    "idea": {
+                                        "type": "string",
+                                        "description": "The user's idea or request"
+                                    }
+                                },
+                                "required": ["idea"]
+                            },
+                            "output_schema": {
+                                "type": "object",
+                                "properties": {
+                                    "response": {
+                                        "type": "string",
+                                        "description": "The AI's response to the user's idea"
+                                    }
+                                },
+                                "required": ["response"]
+                            }
+                        },
+                        "example_1": {
+                            "input": {
+                                "idea": promptParts.inputExample
+                            },
+                            "output": {
+                                "response": promptParts.outputExample
+                            }
+                        },
+                        "constraints_and_notes": [
+                            promptParts.warnings,
+                            "Follow the return format: " + promptParts.returnFormat,
+                            "Context: " + promptParts.contextDump
+                        ]
+                    };
+                    
+                    const jsonString = JSON.stringify(jsonPrompt, null, 2);
+                    this.updateOutput(jsonString, true, false, false, false, false);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                convertToSql() {
+                    if (!this.state.parsedPromptData) return;
+                    
+                    const promptParts = this.state.parsedPromptData.promptParts;
+                    const sqlPrompt = `-- SQL-style Prompt for AI
+SELECT 
+    task_description AS goal,
+    return_format AS output_format,
+    warnings AS constraints,
+    context_dump AS context
+FROM 
+    prompt_requirements
+WHERE 
+    task_id = '${promptParts.inputExample.replace(/'/g, "''")}'
+ORDER BY 
+    priority DESC;
+-- Example Query:
+SELECT 
+    response 
+FROM 
+    ai_output 
+WHERE 
+    input_idea = '${promptParts.inputExample.replace(/'/g, "''")}'
+LIMIT 1;`;
+                    
+                    this.updateOutput(sqlPrompt, false, true, false, false, false);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                convertToYaml() {
+                    if (!this.state.parsedPromptData) return;
+                    
+                    const promptParts = this.state.parsedPromptData.promptParts;
+                    const yamlPrompt = `# YAML-style Prompt for AI
+task:
+  description: "${promptParts.goal}"
+  format: "${promptParts.returnFormat}"
+  
+constraints:
+  - "${promptParts.warnings}"
+  
+context:
+  - "${promptParts.contextDump}"
+  
+examples:
+  input: "${promptParts.inputExample}"
+  expected_output: "${promptParts.outputExample}"
+  
+metadata:
+  created_by: PromptOS
+  version: "1.0"`;
+                    
+                    this.updateOutput(yamlPrompt, false, false, true, false, false);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                convertToXml() {
+                    if (!this.state.parsedPromptData) return;
+                    
+                    const promptParts = this.state.parsedPromptData.promptParts;
+                    const xmlPrompt = `<?xml version="1.0" encoding="UTF-8"?>
+<prompt>
+    <task>
+        <description>${promptParts.goal}</description>
+        <format>${promptParts.returnFormat}</format>
+    </task>
+    <constraints>
+        <warning>${promptParts.warnings}</warning>
+    </constraints>
+    <context>
+        <dump>${promptParts.contextDump}</dump>
+    </context>
+    <examples>
+        <input>${promptParts.inputExample}</input>
+        <expected_output>${promptParts.outputExample}</expected_output>
+    </examples>
+</prompt>`;
+                    
+                    this.updateOutput(xmlPrompt, false, false, false, true, false);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                convertToGraph() {
+                    if (!this.state.parsedPromptData) return;
+                    
+                    const promptParts = this.state.parsedPromptData.promptParts;
+                    const graphPrompt = `# Graph-based Prompt for AI
+# Nodes represent concepts, edges represent relationships
+# This format helps AI understand complex relationships between ideas
+graph TD
+    A["${promptParts.goal}"] --> B["${promptParts.returnFormat}"]
+    A --> C["${promptParts.warnings}"]
+    A --> D["${promptParts.contextDump}"]
+    B --> E["Output"]
+    C --> E
+    D --> E
+    E --> F["${promptParts.outputExample}"]
+    
+    classDef primaryNode fill:#9b59b6,stroke:#333,stroke-width:2px,color:#fff
+    classDef secondaryNode fill:#8e44ad,stroke:#333,stroke-width:1px,color:#fff
+    classDef outputNode fill:#3498db,stroke:#333,stroke-width:2px,color:#fff
+    
+    class A primaryNode
+    class B,C,D secondaryNode
+    class E,F outputNode
+# Graph Analysis Instructions:
+# 1. Start from the main goal node and follow relationships
+# 2. Consider how constraints and context influence the output
+# 3. Identify key dependencies and connections between concepts
+# 4. Use the graph structure to organize your response logically`;
+                    
+                    this.updateOutput(graphPrompt, false, false, false, false, true);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                convertToContextual() {
+                    if (!this.state.parsedPromptData) return;
+                    const data = this.state.parsedPromptData;
+                    const contextualPrompt = 'You are an expert AI. Your task is to act as instructed in the context and fulfill the following goal: "' + data.promptParts.goal + '".\n\nReferencing the detailed structure below, generate a complete and high-quality response.\n\n' + data.standardFormat;
+                    this.updateOutput(contextualPrompt, false, false, false, false, false);
+                    this.elements.conversionButtons.style.display = 'none';
+                },
+                
+                updateOutput(content, isJson = false, isSql = false, isYaml = false, isXml = false, isGraph = false) {
+                    this.state.finalPrompt = content;
+                    this.state.isJsonFormat = isJson;
+                    this.state.isSqlFormat = isSql;
+                    this.state.isYamlFormat = isYaml;
+                    this.state.isXmlFormat = isXml;
+                    this.state.isGraphFormat = isGraph;
+                    
+                    if (isJson) {
+                        this.elements.output.innerHTML = '<div class="json-output">' + content + '</div>';
+                    } else if (isSql) {
+                        this.elements.output.innerHTML = '<div class="json-output">' + content.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    } else if (isYaml) {
+                        this.elements.output.innerHTML = '<div class="json-output">' + content.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    } else if (isXml) {
+                        this.elements.output.innerHTML = '<div class="json-output">' + content.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    } else if (isGraph) {
+                        this.elements.output.innerHTML = '<div class="json-output">' + content.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    } else {
+                        const formattedContent = content
+                            .replace(/---\n?/g, '<hr style="border: none; border-top: 1px dashed var(--panel-border); margin: 1rem 0;">')
+                            .replace(/🎯 Goal/g, '<strong>🎯 Goal</strong>').replace(/📦 Return Format/g, '<strong>📦 Return Format</strong>')
+                            .replace(/⚠️ Warnings/g, '<strong>⚠️ Warnings</strong>').replace(/🗂 Context Dump/g, '<strong>🗂 Context Dump</strong>')
+                            .replace(/\n/g, '<br/>');
+                        this.elements.output.innerHTML = formattedContent;
+                    }
+                    
+                    if (encoding && tokenCountElement) {
+                        try {
+                            const tokens = encoding.encode(content).length;
+                            tokenCountElement.textContent = tokens;
+                            tokenDisplayElement.classList.add('visible');
+                        } catch (e) {
+                             console.warn("Token counting failed for current content:", e);
+                             if(tokenDisplayElement) tokenDisplayElement.classList.remove('visible');
+                        }
+                    }
+                    
+                    this.saveHistory(content, isJson, isSql, isYaml, isXml, isGraph);
+                },
+                
+                copyPrompt() { 
+                    if (!this.state.finalPrompt) {
+                        this.showNotification("Nothing to copy!");
+                        return;
+                    }
+                    
+                    let plainTextPrompt = this.state.finalPrompt;
+                    
+                    if (this.state.isJsonFormat || this.state.isSqlFormat || this.state.isYamlFormat || this.state.isXmlFormat || this.state.isGraphFormat) {
+                        plainTextPrompt = this.state.finalPrompt.replace(/^<div class="json-output">/, '').replace(/<\/div>$/, '');
+                    } else {
+                        plainTextPrompt = this.state.finalPrompt
+                            .replace(/<hr style="[^"]*">/g, '').replace(/<strong>([^<]+)<\/strong>/g, '$1')
+                            .replace(/🎯 Goal<br\/>/g, '🎯 Goal\n').replace(/📦 Return Format<br\/>/g, '📦 Return Format\n')
+                            .replace(/⚠️ Warnings<br\/>/g, '⚠️ Warnings\n').replace(/🗂 Context Dump<br\/>/g, '🗂 Context Dump\n')
+                            .replace(/<pre>|<\/pre>|\*\*/g, '').replace(/<br\/>/g, '\n')
+                            .replace(/\n\n\n+/g, '\n\n').trim();
+                    }
+                    
+                    if (navigator.clipboard) {
+                        navigator.clipboard.writeText(plainTextPrompt).then(() => {
+                            this.showNotification('Prompt copied to clipboard!');
+                        }).catch(err => {
+                            console.error('Failed to copy: ', err);
+                            this.showNotification('Failed to copy prompt. Please try again.');
+                        });
+                    } else {
+                        const textArea = document.createElement('textarea');
+                        textArea.value = plainTextPrompt;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                        
+                        this.showNotification('Prompt copied to clipboard!');
+                    }
+                },
+                
+                showShareModal() {
+                    const shareUrl = 'https://promptos-gq5n.vercel.app/';
+                    this.elements.shareLink.value = shareUrl;
+                    this.elements.shareModal.classList.add('active');
+                },
+                
+                hideShareModal() {
+                    this.elements.shareModal.classList.remove('active');
+                },
+                
+                sharePrompt(platform) {
+                    const shareUrl = 'https://promptos-gq5n.vercel.app/';
+                    const shareText = "🚀 Discover PromptOS: The Ultimate AI Prompt Generator!\n\nTransform your ideas into expert-level prompts for art, code, business, and more. Try it now and supercharge your AI interactions!";
+                    
+                    let url;
+                    switch(platform) {
+                        case 'facebook':
+                            url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent("Discover PromptOS: The Ultimate AI Prompt Generator for Art, Code & More!")}`;
+                            break;
+                        case 'twitter':
+                            url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent("🚀 Discover PromptOS: The Ultimate AI Prompt Generator! Transform ideas into expert prompts. Try it now!")}`;
+                            break;
+                        case 'whatsapp':
+                            url = `https://wa.me/?text=${encodeURIComponent(shareText + "\n\n" + shareUrl)}`;
+                            break;
+                        case 'linkedin':
+                            url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent("PromptOS: The Ultimate AI Prompt Generator")}&summary=${encodeURIComponent("Transform your ideas into expert-level prompts with our intelligent AI engine.")}`;
+                            break;
+                        case 'copy':
+                            if (navigator.clipboard) {
+                                navigator.clipboard.writeText(shareText + "\n\n" + shareUrl).then(() => {
+                                    this.showNotification('Promotional message copied to clipboard!');
+                                }).catch(err => {
+                                    console.error('Failed to copy: ', err);
+                                    this.showNotification('Failed to copy. Please try again.');
+                                });
+                            } else {
+                                const textArea = document.createElement('textarea');
+                                textArea.value = shareText + "\n\n" + shareUrl;
+                                document.body.appendChild(textArea);
+                                textArea.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(textArea);
+                                
+                                this.showNotification('Promotional message copied to clipboard!');
+                            }
+                            return;
+                        default:
+                            return;
+                    }
+                    
+                    const width = 600;
+                    const height = 400;
+                    const left = (window.innerWidth / 2) - (width / 2);
+                    const top = (window.innerHeight / 2) - (height / 2);
+                    
+                    window.open(url, 'shareWindow', `width=${width},height=${height},left=${left},top=${top}`);
+                },
+                
+                showSearchModal() {
+                    this.elements.templateModal.innerHTML = '<div class="modal-content"><div class="modal-header"><h2 id="modal-title">Search Templates</h2><button class="icon-btn" id="modal-close-btn">×</button></div><input type="text" id="template-search-input" placeholder="Search templates..." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--panel-bg); color: var(--text-color); margin-bottom: 1rem;"><div class="modal-body" id="modal-body"></div></div>';
+                    this.elements.templateModal.querySelector('#modal-close-btn').addEventListener('click', () => this.hideModal());
+                    this.elements.templateModal.querySelector('#template-search-input').addEventListener('input', e => this.renderTemplates(e.target.value, false));
+                    this.renderTemplates('', false);
+                    this.showModal('template-modal');
+                },
+                showCategoryModal() {
+                    this.elements.templateModal.innerHTML = '<div class="modal-content"><div class="modal-header"><h2 id="modal-title">Browse Categories</h2><button class="icon-btn" id="modal-close-btn">×</button></div><div class="modal-body" id="modal-body"></div></div>';
+                    this.elements.templateModal.querySelector('#modal-close-btn').addEventListener('click', () => this.hideModal());
+                    this.renderCategories();
+                    this.showModal('template-modal');
+                },
+                hideModal() { this.elements.templateModal.classList.remove('active'); },
+                showModal() { this.elements.templateModal.classList.add('active'); },
+                
+                renderCategories() {
+                    const modalBody = this.elements.templateModal.querySelector('#modal-body');
+                    modalBody.innerHTML = Object.keys(this.templateDB).map(cat => '<div class="category-item" data-category="' + cat + '">' + cat + '</div>').join('');
+                    modalBody.querySelectorAll('.category-item').forEach(item => item.addEventListener('click', e => this.renderTemplates(e.currentTarget.dataset.category, true)));
+                },
+                renderTemplates(filter, isCategory = false) {
+                    let html = '';
+                    const modalBody = this.elements.templateModal.querySelector('#modal-body');
+                    const renderList = (category, templates) => {
+                        html += '<div class="category-list"><div class="category-title">' + category + '</div>';
+                        html += templates.map(t => '<div class="template-item" data-idea="' + (t.idea || '') + '">' + t.name + '</div>').join('');
+                        html += '</div>';
+                    };
+                    if (isCategory) { renderList(filter, this.templateDB[filter]); }
+                    else { for (const [category, templates] of Object.entries(this.templateDB)) { const filteredTemplates = templates.filter(t => t.name.toLowerCase().includes(filter.toLowerCase())); if (filteredTemplates.length > 0) { renderList(category, filteredTemplates); } } }
+                    modalBody.innerHTML = html;
+                    this.addTemplateClickListeners(modalBody);
+                },
+                addTemplateClickListeners(container) {
+                    container.querySelectorAll('.template-item').forEach(item => item.addEventListener('click', e => {
+                        this.loadTemplate(e.currentTarget.dataset.idea);
+                    }));
+                },
+                loadTemplate(idea) { this.elements.canvas.value = idea; this.hideModal(); this.generateFullPrompt(); },
+                
+                toggleHistoryPanel(show) {
+                    const panel = this.elements.historyPanel;
+                    if (show && !panel.querySelector('#history-list-container')) {
+                        panel.innerHTML = `
+                            <div class="modal-header" style="padding: 1rem; border-bottom: 1px solid var(--panel-border);">
+                                <button class="icon-btn" id="history-back-btn" title="Close"><i class="fa-solid fa-arrow-left"></i></button>
+                                <h2 style="flex-grow: 1; text-align: center;">History</h2>
+                                <div style="width: 48px;"></div>
+                            </div>
+                            <div class="modal-body" id="history-list-container" style="flex-grow: 1; overflow-y: auto;"></div>
+                            <div style="padding: 0.5rem; border-top: 1px solid var(--panel-border);">
+                                <button id="clear-history-btn" class="conversion-btn" style="width: 100%; background-color: rgba(192, 57, 43, 0.3); color: #e74c3c;">Clear All History</button>
+                            </div>`;
+                        panel.querySelector('#history-back-btn').addEventListener('click', () => this.toggleHistoryPanel(false));
+                        panel.querySelector('#clear-history-btn').addEventListener('click', () => this.clearHistory());
+                    }
+                    if(show) this.renderHistory();
+                    panel.classList.toggle('active', show);
+                },
+                
+                saveHistory(prompt, isJson = false, isSql = false, isYaml = false, isXml = false, isGraph = false) {
+                    if(this.state.history.length > 0 && this.state.history[0].prompt === prompt) return; 
+                    this.state.history.unshift({ 
+                        id: Date.now(), 
+                        prompt,
+                        isJson,
+                        isSql,
+                        isYaml,
+                        isXml,
+                        isGraph
+                    });
+                    if (this.state.history.length > 50) this.state.history.pop();
+                    localStorage.setItem('promptOSHistory', JSON.stringify(this.state.history));
+                    if (this.elements.historyPanel.classList.contains('active')) this.renderHistory();
+                },
+                
+                loadHistory() {
+                    const saved = localStorage.getItem('promptOSHistory');
+                    if (saved) { 
+                        this.state.history = JSON.parse(saved); 
+                    }
+                },
+                
+                renderHistory() {
+                    const historyListContainer = this.elements.historyPanel.querySelector('#history-list-container');
+                    if (!historyListContainer) return;
+                    if(this.state.history.length === 0) {
+                        historyListContainer.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 1rem;">No history yet.</p>';
+                        return;
+                    }
+                    historyListContainer.innerHTML = this.state.history.map(item => {
+                         let shortPrompt;
+                         let formatType = '';
+                         
+                         if (item.isJson) {
+                             try {
+                                 const jsonPrompt = JSON.parse(item.prompt);
+                                 shortPrompt = jsonPrompt.request.task_description || "JSON Prompt";
+                                 formatType = '(JSON)';
+                             } catch (e) {
+                                 shortPrompt = "JSON Prompt (parse error)";
+                                 formatType = '(JSON)';
+                             }
+                         } else if (item.isSql) {
+                             shortPrompt = "SQL Prompt";
+                             formatType = '(SQL)';
+                         } else if (item.isYaml) {
+                             shortPrompt = "YAML Prompt";
+                             formatType = '(YAML)';
+                         } else if (item.isXml) {
+                             shortPrompt = "XML Prompt";
+                             formatType = '(XML)';
+                         } else if (item.isGraph) {
+                             shortPrompt = "Graph Prompt";
+                             formatType = '(Graph)';
+                         } else {
+                             const goalMatch = item.prompt.match(/🎯 Goal\n([\s\S]*?)(?:\n---|\s*$)/); 
+                             shortPrompt = goalMatch ? goalMatch[1].trim() : (item.prompt.substring(0,40) + '...');
+                         }
+                         
+                         return '<div class="template-item" data-history-id="' + item.id + '">' + shortPrompt.substring(0, 40) + (shortPrompt.length > 40 ? '...' : '') + ' ' + formatType + '</div>';
+                     }).join('');
+                     
+                     historyListContainer.querySelectorAll('.template-item').forEach(item => {
+                         item.addEventListener('click', e => {
+                             const historyId = Number(e.currentTarget.dataset.historyId);
+                             const historyItem = this.state.history.find(h => h.id === historyId);
+                             if (historyItem) {
+                                 this.updateOutput(historyItem.prompt, historyItem.isJson, historyItem.isSql, historyItem.isYaml, historyItem.isXml, historyItem.isGraph);
+                                 this.state.parsedPromptData = { standardFormat: historyItem.prompt, promptParts: this.parsePrompt(historyItem.prompt) };
+                                 this.elements.conversionButtons.style.display = 'flex';
+                                 this.toggleHistoryPanel(false);
+                             }
+                         });
+                     });
+                },
+                
+                parsePrompt(promptText) {
+                    const data = { goal: '', returnFormat: '', warnings: '', contextDump: '', fullText: promptText };
+                    const sections = promptText.split(/\n---\n/);
+                    sections.forEach(section => {
+                        if (section.startsWith('🎯 Goal')) data.goal = section.replace('🎯 Goal\n', '').trim();
+                        else if (section.startsWith('📦 Return Format')) data.returnFormat = section.replace('📦 Return Format\n', '').trim();
+                        else if (section.startsWith('⚠️ Warnings')) data.warnings = section.replace('⚠️ Warnings\n', '').trim();
+                        else if (section.startsWith('🗂 Context Dump')) data.contextDump = section.replace('🗂 Context Dump\n', '').trim();
+                    });
+                    return data;
+                },
+                
+                clearHistory() {
+                    if(confirm("Are you sure you want to clear all prompt history? This cannot be undone.")) {
+                        this.state.history = [];
+                        localStorage.removeItem('promptOSHistory');
+                        this.renderHistory();
+                    }
+                },
+                
+                showNotification(message, type = 'success') {
+                    const notification = document.createElement('div');
+                    notification.className = `notification ${type}`;
+                    notification.textContent = message;
+                    notification.style.position = 'fixed';
+                    notification.style.bottom = '20px';
+                    notification.style.left = '50%';
+                    notification.style.transform = 'translateX(-50%)';
+                    notification.style.zIndex = '10000';
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.style.opacity = '0';
+                        setTimeout(() => {
+                            notification.remove();
+                        }, 300);
+                    }, 3000);
+                }
+            };
+            
+            PromptOS.init();
+        } catch (err) {
+            console.error("Critical error on initialization:", err);
+            document.body.innerHTML = '<div style="color: white; text-align: center; padding: 50px;"><h1>Oops!</h1><p>Something went wrong while loading the application. Please try refreshing the page. If the problem persists, check the browser console for errors.</p></div>';
+        }
+    });
+    //]]>
+    </script>
+</body>
+</html>
