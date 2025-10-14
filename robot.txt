@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://promptos-gq5n.vercel.app/sitemap.xml
+
+# Sitemap
+Sitemap: https://promptos-new-dls8.vercel.app/sitemap.xml
+
+# Block common bot paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /sw.js

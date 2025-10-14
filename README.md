@@ -1,6 +1,6 @@
-# PromptOS: AI Prompt Generator
+# PromptOS: AI Prompt Generator for GPT-4, Claude & Midjourney
 
-Transform your simple ideas into expert-level prompts for any task with our intelligent AI co-pilot.
+Transform your simple ideas into expert-level prompts for any AI model with our intelligent AI co-pilot in 2024.
 
 ## 🚀 Features
 
@@ -11,6 +11,10 @@ Transform your simple ideas into expert-level prompts for any task with our inte
 - **Token Counter**: Estimate token usage for different AI platforms
 - **Mobile-Friendly**: Responsive design that works on all devices
 - **PWA Support**: Install as a standalone application
+
+## 🌐 Live Demo
+
+Check out the live application at: [https://promptos-new-dls8.vercel.app/](https://promptos-new-dls8.vercel.app/)
 
 ## 🛠️ Technologies Used
 
