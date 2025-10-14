@@ -1,5 +1,1 @@
-# Redirect from old domain to new domain
-https://promptos-new-wheat.vercel.app/* https://promptos-new-dls8.vercel.app/:splat 301
-
-# SPA routing
-/* /index.html 200
+/*    /index.html   200

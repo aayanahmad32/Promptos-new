@@ -18,12 +18,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "redirects": [
-    {
-      "source": "https://promptos-new-wheat.vercel.app/(.*)",
-      "destination": "https://promptos-new-dls8.vercel.app/$1",
-      "permanent": true
-    }
   ]
 }
