@@ -269,7 +269,11 @@
                             <button id="convert-graph-btn" class="conversion-btn">Graph</button>
                         </div>
                         
-                        <!-- Middle Ad Placeholder 1 -->
+                        <!-- Moved the output preview above the ads -->
+                        <div id="output-preview">Your professional prompt will appear here.</div>
+                        <div id="token-count-display"><i class="fa-solid fa-coins"></i> Approx. <span id="token-count">0</span> tokens</div>
+                        
+                        <!-- Middle Ad Placeholder 1 - Moved below the output -->
                         <div id="ad-placeholder-middle-1" class="ad-placeholder">
                             <div class="ad-banner-middle" id="ad-banner-middle-1">
                                 <script type="text/javascript">
@@ -285,7 +289,7 @@
                             </div>
                         </div>
                         
-                        <!-- Middle Ad Placeholder 2 -->
+                        <!-- Middle Ad Placeholder 2 - Moved below the output -->
                         <div id="ad-placeholder-middle-2" class="ad-placeholder">
                             <div class="ad-banner-middle" id="ad-banner-middle-2">
                                 <script type="text/javascript">
@@ -300,9 +304,6 @@
                                 <script type="text/javascript" src="//www.highperformanceformat.com/96ca6bc8d95aa477c34799c94c8a4c9a/invoke.js"></script>
                             </div>
                         </div>
-                        
-                        <div id="output-preview">Your professional prompt will appear here.</div>
-                        <div id="token-count-display"><i class="fa-solid fa-coins"></i> Approx. <span id="token-count">0</span> tokens</div>
                     </div>
                 </div>
                 
@@ -771,15 +772,28 @@
                 },
                 
                 attachEventListeners() {
-                    document.getElementById('search-btn').addEventListener('click', () => this.showSearchModal());
-                    document.getElementById('generate-btn').addEventListener('click', () => this.generateFullPrompt());
-                    document.getElementById('generate-btn-top').addEventListener('click', () => this.generateFullPrompt());
+                    // Generate buttons
+                    const generateBtnTop = document.getElementById('generate-btn-top');
+                    const generateBtn = document.getElementById('generate-btn');
                     
+                    if (generateBtnTop) {
+                        generateBtnTop.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            this.generateFullPrompt();
+                        });
+                    }
+                    
+                    if (generateBtn) {
+                        generateBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            this.generateFullPrompt();
+                        });
+                    }
+                    
+                    document.getElementById('search-btn').addEventListener('click', () => this.showSearchModal());
                     document.getElementById('copy-btn').addEventListener('click', () => this.copyPrompt());
                     document.getElementById('copy-btn-top').addEventListener('click', () => this.copyPrompt());
-
                     document.getElementById('history-btn').addEventListener('click', () => this.toggleHistoryPanel(true));
-                    
                     document.getElementById('settings-btn').addEventListener('click', () => {
                         this.showNotification('New features coming soon!');
                     });
