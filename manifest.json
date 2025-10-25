@@ -1,19 +1,16 @@
 {
-  "name": "PromptOS: AI Prompt Generator",
+  "name": "PromptOS: Free AI Prompt Generator",
   "short_name": "PromptOS",
-  "description": "Transform your ideas into expert-level AI prompts",
+  "description": "Transform your ideas into expert-level prompts for GPT-4, Claude, Midjourney, and more.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0c14",
   "theme_color": "#9b59b6",
-  "scope": "/",
-  "lang": "en",
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWi7g_fcfCwdjM-NE650w8TMg3NiT4LpyOqnqD4fid1NQA7fklKJfghAqX-QW1D8G77_ifvAV3NHSxHCuvTNQ83Kq1pLPF2I6wObtWxXWJjW9dKsVIdDaUQ_pPMUWENhXKrwnudHZFvrK1CFG6vFnzNLl7OhxSmWJolLJoARnXj90CKfNuykEf8SBlguAR/s192/IMG_20250928_223807.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
