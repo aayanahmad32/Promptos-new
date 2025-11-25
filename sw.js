@@ -1,33 +1,28 @@
-const CACHE_NAME = 'promptos-v1.0.4';
-const urlsToCache = [
+const CACHE_NAME = 'promptos-v2025-1';
+const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
-  '/manifest.json',
-  'https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+  '/style.css',
+  '/script.js',
+  '/manifest.json'
 ];
 
-self.addEventListener('install', event => {
+// Install Service Worker
+self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-    .then(cache => cache.addAll(urlsToCache))
-    .catch(() => {})
-  );
-  self.skipWaiting();
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-    .then(response => response || fetch(event.request))
+    .then((cache) => {
+      return cache.addAll(ASSETS_TO_CACHE);
+    })
   );
 });
 
-self.addEventListener('activate', event => {
+// Activate Service Worker
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map(cacheName => {
+        cacheNames.map((cacheName) => {
           if (cacheName !== CACHE_NAME) {
             return caches.delete(cacheName);
           }
@@ -35,5 +30,21 @@ self.addEventListener('activate', event => {
       );
     })
   );
-  self.clients.claim();
+});
+
+// Fetch Strategy: Stale-While-Revalidate
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.match(event.request).then((response) => {
+        const fetchPromise = fetch(event.request).then((networkResponse) => {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        }).catch(() => {
+          // Fallback can go here if needed
+        });
+        return response || fetchPromise;
+      });
+    })
+  );
 });

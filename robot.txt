@@ -1,10 +1,7 @@
 User-agent: *
 Allow: /
-
-# Sitemap
 Sitemap: https://promptos-new-dls8.vercel.app/sitemap.xml
 
-# Block common bot paths
-Disallow: /admin/
-Disallow: /private/
-Disallow: /sw.js
+# Block access to system files if any exist in future
+Disallow: /_next/
+Disallow: /api/
